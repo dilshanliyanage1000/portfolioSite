@@ -1,18 +1,49 @@
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/main_nav.ejs') %>
-   
 
-<main class="container">
-  <div class="jumbotron">
-    <h1 class="display-4">Welcome to <%= title %> page</h1>
+<main class="container" style="margin-top: 7rem; margin-bottom: 3rem;">
+
+  <div class="jumbotron mt-5">
+    <div class="row">
+
+      <div class="col-md-3">
+        <img class="mt-5" src="/img/me.png" alt="UI-UX Logo" style="width: 100%;" />
+      </div>
+
+      <div class="col-md-9 text-end">
+
+        <h1 class="display-4">Welcome to my Portfolio!</h1>
+
+        <h3 class="display-6 mt-4">My name is Attidiye Dilshan Nayanamadhu Liyanage.</h3>
+
+        <h3 class="display-6 mt-5" style="font-size: 25px;">I'm a passionate Web Developer and UI/UX
+          Designer with a keen eye for detail. I posses a love for creating user-centered experiences and strive to
+          craft visually appealing and functional websites. Whether it's bringing innovative designs to life or building
+          robust web applications, I'm dedicated to delivering exceptional results.</h3>
+
+        <h3 class="display-6 mt-5" style="font-size: 25px;">Feel free to download my resume to learn more about my
+          qualifications and experience.</h3>
+
+        <button type="button" class="btn index-link mt-4" style="margin-left: 10px; width: 200px;" onclick="downloadFile()">
+          <h3 class="display-6" style="font-size: 20px;"><i class="fa-solid fa-arrow-down" style="margin-right: 10px;"></i>Get Resume</h3>
+        </button>
+
+      </div>
+
     </div>
-    </main>
-    
-    <!--bottom nav-->
-    
-   
-   
-      <!--script section-->
-      <%- include ('partials/bottom_nav.ejs') %>
-      <%- include ('partials/footer.ejs') %>
-   
+
+  </div>
+
+</main>
+
+<script>
+  function downloadFile() {
+    var link = document.createElement('a');
+    link.href = '/Content/Dilshan_Liyanage_Resume.pdf';
+    link.download = 'Dilshan_Liyanage_Resume.pdf';
+    link.click();
+  }
+</script>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

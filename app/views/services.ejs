@@ -1,16 +1,55 @@
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/main_nav.ejs') %>
-   
 
-<main class="container">
+<main class="container" style="margin-top: 7rem;">
+
   <div class="jumbotron">
-    <h1 class="display-4">Welcome to <%= title %> page</h1>
+    <h1 class="display-5 text-center" style="font-size: 40px;">My <%= title %> include....</h1>
+
+    <div class="mt-5">
+      <div class="row" style="padding: 5px;">
+        <div class="col-md-4 text-center">
+          <img src="/img/htmlcss.png" alt="HTML-CSS logo" style="height: 150px;">
+          <br>
+          <h2 class="display-4 mt-3" style="font-size: 35px;">Web Development</h2><br>
+          <p class="display-5" style="font-size: 20px;">
+            I specialize in creating attractive and functional websites using HTML and CSS. I combine my technical
+            skills
+            with design principles to bring your unique vision to life. I focus on building websites that work well on
+            different devices and browsers, ensuring a great user experience. With attention to detail and clean code, I
+            create captivating web presences.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="/img/uiux.png" alt="UI-UX logo" style="height: 150px;">
+          <br>
+          <h2 class="display-4 mt-3" style="font-size: 35px;">UI/UX Designs</h2><br>
+          <p class="display-5" style="font-size: 20px;">
+            I am dedicated to designing interfaces that are easy to use and visually appealing. By incorporating
+            creativity, research, and understanding user behavior, I create interfaces that engage and delight users. My
+            goal is to optimize the design for driving conversions and providing an exceptional user experience.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="/img/android.png" alt="Android logo" style="height: 150px;">
+          <br>
+          <h2 class="display-4 mt-3" style="font-size: 35px;">Android Development</h2><br>
+          <p class="display-5" style="font-size: 20px;">
+            I develop high-quality Android applications tailored to your specific needs. I build
+            user-friendly and robust applications that perform well. By building unique apps, you can reach a wider
+            audience and stay ahead in the ever-evolving mobile landscape.
+          </p>
+        </div>
+      </div>
+
     </div>
-    </main>
-    <!--bottom nav-->
-   
-   
-      <!--script section-->
-      <%- include ('partials/bottom_nav.ejs') %>
-      <%- include ('partials/footer.ejs') %>
-   
+
+  </div>
+
+
+
+
+</main>
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

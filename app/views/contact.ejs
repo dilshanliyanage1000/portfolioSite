@@ -1,19 +1,68 @@
+<!--Attidiye Dilshan Nayanamadhu Liyanage -->
+<!-- 301279203 -->
+<!-- COMP229 SEC.001 -->
+
+<!-- including partials -->
+
 <%- include ('partials/header.ejs') %>
 <%- include ('partials/main_nav.ejs') %>
-   
 
-<main class="container">
-  <div class="jumbotron">
-    <h1 class="display-4">Welcome to <%= title %> page</h1>
-    <p>Contact Us</p>
-    </div>
-    </main>
-    
-    <!--bottom nav-->
-    
-   
-   
-      <!--script section-->
-      <%- include ('partials/bottom_nav.ejs') %>
-      <%- include ('partials/footer.ejs') %>
-   
+<main class="container" style="margin-top: 6rem; margin-bottom: 2rem;">
+
+  <div class="jumbotron text-center">
+    <h1 class="display-5">Let's connect!</h1>
+
+    <!-- Link to visit my LinkedIn profile -->
+    <p class="display-5 mt-3" style="font-size: 20px;">
+      <a href="https://www.linkedin.com/in/dilaliyanage/" target="_blank" style="text-decoration: none; color: white;">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+
+      <a href="https://github.com/dilshanliyanage1000/portfolioSite" target="_blank" style="text-decoration: none; color: white; margin-left: 30px;">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+
+      <a href="mailto:aliyana4@my.centennialcollege.ca" target="_blank" style="text-decoration: none; color: white; margin-left: 30px;">
+        <i class="fa-solid fa-envelope-open"></i> Email
+      </a>
+
+    </p>
+
+    <p class="display-5" style="font-size: 20px;">Please feel free to reach out to me by filling out this form and I
+      will get back to you as soon as possible!</p>
+
+    <!-- Form to capture user input -->
+    <form class="mt-4" action="/" style="width: 500px; margin: 0 auto;">
+
+      <div class="mb-3" style="text-align: start;">
+        <label for="name" class="form-label">Name</label>
+        <input type="name" class="form-control" id="name" name="name">
+      </div>
+
+      <div class="mb-3" style="text-align: start;">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email">
+      </div>
+
+      <div class="mb-3" style="text-align: start;">
+        <label for="subject" class="form-label">Subject</label>
+        <input type="subject" class="form-control" id="subject" name="subject">
+      </div>
+
+      <div class="mb-3" style="text-align: start;">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" name="message" id="message" rows="2"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-light">Connect!</button>
+
+    </form>
+
+  </div>
+
+</main>
+
+<!-- including partials -->
+
+<%- include ('partials/bottom_nav.ejs') %>
+<%- include ('partials/footer.ejs') %>

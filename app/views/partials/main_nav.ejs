@@ -5,20 +5,20 @@
 <!-- Dark Navigation Bar -->
 
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark p-3">
-  <div class="container-fluid">
+  <div class="container-fluid justify-content-md-center">
+
+    <!-- Custom logo -->
+    <a class="navbar-brand" href="/">
+      <img src="/img/dila_logo.png" alt="Dila Logo" width="40">
+    </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse navbar-center" id="navbarNav">
+    <div class="collapse navbar-collapse navbar-center flex-grow-0" id="navbarNav">
       <ul class="navbar-nav ml-auto">
-        
-        <!-- Custom logo -->
-        <a class="navbar-brand" href="/">
-          <img src="/img/dila_logo.png" alt="Dila Logo" width="40">
-        </a>
 
         <% if (title=="Home") { %>
         <li class="nav-item active">

@@ -1,9 +1,12 @@
 {
-  "name": "portfolioSite",
+  "homepage": "https://dilshanliyanage1000.github.io/portfolioSite/",
+  "name": "portfoliosite",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
+    "predeploy": "npm i",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Blessing",
@@ -15,6 +18,7 @@
     "compression": "^1.7.4",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "gh-pages": "^5.0.0",
     "jquery": "^3.7.0",
     "method-override": "^3.0.0",
     "morgan": "^1.10.0",
